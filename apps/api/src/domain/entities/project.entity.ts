@@ -1,0 +1,35 @@
+import type { Category } from './category.entity';
+
+export type Project = {
+  id: string;
+  createdAt: Date;
+  externalId: string;
+  name: string;
+  description: string;
+  excerpt: string | null;
+  slug: string;
+  isArchived: boolean;
+  isDraft: boolean;
+  contactPersonEmail: string;
+  linkPrimaryRichText: string | null;
+  isCommercial: boolean;
+  linkToCaseStudyPlain: string | null;
+  clientName: string | null;
+  toolsAndFramework: string;
+  caseStudy: string;
+  clientTimePeriod: string | null;
+  organisation: string | null;
+  titleOfTheProject: string | null;
+  services: string | null;
+  contactPersonNumber: string | null;
+  thumbnailUrl: string | null;
+  thumbnailUrlSecondary: string | null;
+  thumbnailUrlThird: string | null;
+  year: string | null;
+  team: string;
+  linkRichText: string | null;
+  whyYou: string;
+  linkToCaseStudy: string | null;
+  edition: number;
+  categories?: Category[];
+};

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Turbo
+.turbo/
+
+# Build outputs
+dist/
+.next/
+out/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Backups (Phase 6 – contain live DB dumps)
+backups/
+
+# Old/legacy projects (excluded from repo)
+dwa-voting-2026/
+voting2025/
+wa-api/
+wa-voting/
+waysboard/
+wayscircle/
+waysconf-26/

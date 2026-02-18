@@ -1,0 +1,11 @@
+{
+  "extends": "@waysconf/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "noEmit": true,
+    "incremental": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
