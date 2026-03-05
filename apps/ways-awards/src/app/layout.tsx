@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
+import { Button } from "@waysconf/ui";
 import "./globals.css";
+import "@waysconf/ui/fonts.css";
 import "@waysconf/ui/project-page.css";
 import "@waysconf/ui/nominations.css";
+import "@waysconf/ui/components.css";
+import "@waysconf/ui/awards-home.css";
+import "@waysconf/ui/awards-jury-form.css";
 
 export const metadata: Metadata = {
   title: "WaysAwards - Voting",
@@ -16,20 +21,27 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/GeneralSans-Variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body suppressHydrationWarning>
         <div className="site-preheader">
           <div className="site-preheader__content">
             <span className="site-preheader__text">
               WaysConf – product leadership conference
             </span>
-            <a
+            <Button
               href="https://www.waysconf.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="site-preheader__link"
+              className="site-preheader__button"
             >
               waysconf.com
-            </a>
+            </Button>
           </div>
         </div>
         {children}

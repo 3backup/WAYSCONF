@@ -11,6 +11,22 @@ import { Layout } from "@/components/Layout";
 import { ProjectImageGrid } from "@/components/ProjectImageGrid";
 import { ProjectVoteForm } from "./ProjectVoteForm";
 
+function getProjectField(
+  project: Record<string, unknown>,
+  keys: string[]
+): string | null {
+  for (const key of keys) {
+    const value = project[key];
+    if (typeof value === "string") {
+      const trimmed = value.trim();
+      if (trimmed.length > 0) return trimmed;
+    } else if (typeof value === "number") {
+      return String(value);
+    }
+  }
+  return null;
+}
+
 type Props = {
   params: Promise<{ slug: string }>;
   searchParams: Promise<{ verifyCode?: string }>;
@@ -52,37 +68,72 @@ export default async function ProjectPage({ params, searchParams }: Props) {
       ? String(votesValue)
       : null;
 
-  const noCode = (project as Record<string, unknown>).noCode as string | null;
-  const vibeCode = (project as Record<string, unknown>).vibeCode as string | null;
-  const projectType = (project as Record<string, unknown>).type as string | null;
+  const noCode = getProjectField(project as Record<string, unknown>, [
+    "noCode",
+    "no_code",
+  ]);
+  const vibeCode = getProjectField(project as Record<string, unknown>, [
+    "vibeCode",
+    "vibe_code",
+  ]);
+  const projectType = getProjectField(project as Record<string, unknown>, [
+    "type",
+    "projectType",
+    "project_type",
+  ]);
 
-  const services =
-    ((project as Record<string, unknown>).services as string | null) ?? null;
-  const clientTimePeriod =
-    ((project as Record<string, unknown>).clientTimePeriod as string | null) ??
-    null;
-  const techStack =
-    ((project as Record<string, unknown>).toolsAndFramework as string | null) ??
-    null;
-  const team = ((project as Record<string, unknown>).team as string | null) ?? null;
-  const demoLink =
-    ((project as Record<string, unknown>).demoLink as string | null) ?? null;
+  const services = getProjectField(project as Record<string, unknown>, [
+    "services",
+  ]);
+  const clientTimePeriod = getProjectField(project as Record<string, unknown>, [
+    "clientTimePeriod",
+    "client_time_period",
+  ]);
+  const techStack = getProjectField(project as Record<string, unknown>, [
+    "toolsAndFramework",
+    "tools_and_framework",
+    "techStack",
+    "tech_stack",
+  ]);
+  const team = getProjectField(project as Record<string, unknown>, ["team"]);
+  const demoLink = getProjectField(project as Record<string, unknown>, [
+    "demoLink",
+    "demo_link",
+  ]);
   const caseStudyLink =
-    ((project as Record<string, unknown>).casestudyLink as string | null) ??
-    project.linkToCaseStudy ??
-    null;
-  const projectOutcomes =
-    ((project as Record<string, unknown>).projectOutcomes as string | null) ??
-    null;
-  const targetAudience =
-    ((project as Record<string, unknown>).targetAudience as string | null) ??
-    null;
-  const whyYou =
-    ((project as Record<string, unknown>).whyYou as string | null) ?? null;
-  const linkRich =
-    ((project as Record<string, unknown>).linkRich as string | null) ??
-    ((project as Record<string, unknown>).linkRichText as string | null) ??
-    null;
+    getProjectField(project as Record<string, unknown>, [
+      "casestudyLink",
+      "caseStudyLink",
+      "case_study_link",
+      "linkToCaseStudy",
+      "link_to_case_study",
+      "linkToCaseStudyPlain",
+      "link_to_case_study_plain",
+    ]) ?? project.linkToCaseStudy ?? null;
+  const projectOutcomes = getProjectField(project as Record<string, unknown>, [
+    "projectOutcomes",
+    "project_outcomes",
+    "projectOutcome",
+    "project_outcome",
+  ]);
+  const targetAudience = getProjectField(project as Record<string, unknown>, [
+    "targetAudience",
+    "target_audience",
+  ]);
+  const whyYou = getProjectField(project as Record<string, unknown>, [
+    "whyYou",
+    "why_you",
+    "whyUs",
+    "why_us",
+  ]);
+  const linkRich = getProjectField(project as Record<string, unknown>, [
+    "linkRich",
+    "link_rich",
+    "linkRichText",
+    "link_rich_text",
+    "linkPrimaryRichText",
+    "link_primary_rich_text",
+  ]);
 
   const voteBox = (
     <div className="voting-form-container">

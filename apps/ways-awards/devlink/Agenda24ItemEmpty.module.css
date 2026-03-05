@@ -1,0 +1,33 @@
+.agenda24-grid-item {
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.75rem;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(0, 0.00%, 100.00%, 0.20);
+  border-radius: 0.75rem;
+}
+
+.agenda24-grid-item:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.agenda24-grid-item.is-empty {
+  min-height: 12rem;
+}
+
+.agenda24-grid-item.is-empty:hover {
+  background-color: transparent;
+}
+
+#w-node-_2bd4fde8-3f5f-7bc0-2dfe-4030c34d6537-c34d6537 {
+  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-row-start: 1;
+}

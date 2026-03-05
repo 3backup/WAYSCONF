@@ -1,0 +1,3845 @@
+.swiper-slide {
+  position: relative;
+
+  display: flex;
+  width: 26rem;
+  height: 21rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0 0 auto;
+
+  background-color: hsla(0, 0.00%, 0.00%, 0.16);
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+    width: 80%;
+  }
+}
+
+.swiper-slide.is--feedback-item {
+  position: relative;
+
+  display: flex;
+  width: 26rem;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 0 0 auto;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--feedback-item {
+    width: 75%;
+    height: auto;
+  }
+}
+
+.swiper-slide.is--home24 {
+  display: flex;
+  width: 50%;
+  height: 35rem;
+  padding: 3.5rem;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid hsla(0, 0.00%, 100.00%, 0.16);
+
+  background-color: rgba(255, 255, 255, 0.08);
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--home24 {
+    width: 75%;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--home24 {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
+.swiper-slide.is--home24.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--home24.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--home24.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--home24.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--home24.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--home24.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--home24.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--home24.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--home24.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--home24.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--cfs24 {
+  display: flex;
+  width: auto;
+  height: 35rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem;
+  justify-content: space-between;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25f_lectureCard%20(2)%20(1).webp");
+  background-position: 50% 50%;
+  background-size: cover;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--cfs24 {
+    width: 75%;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--cfs24 {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--cfs24.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--cfs24.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--cfs24.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--cfs24.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--cfs24.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--cfs24.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--cfs24.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--cfs24.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--cfs24.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--cfs24.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--cfs24.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--cfs24.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--aboutus24 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--aboutus24 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--aboutus24 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--aboutus24.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--aboutus24.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--aboutus24.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--aboutus24.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--aboutus24.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--aboutus24.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--aboutus24.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--aboutus24.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--aboutus24.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--aboutus24.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2017 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2017 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2017 {
+    width: 100%;
+    height: 48rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2017.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2017.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2017.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2017.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2017.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2017.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2017.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2017.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2017.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2017.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2017.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2017.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2018 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2018 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2018 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2018.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2018.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2018.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2018.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2018.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2018.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2018.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2018.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2018.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2018.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2018.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2018.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2019 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2019 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2019 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2019.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2019.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2019.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2019.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2019.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2019.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2019.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2019.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2019.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2019.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2019.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2019.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2020 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2020 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2020 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2020.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2020.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2020.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2020.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2020.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2020.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2020.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2020.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2020.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2020.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2020.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2020.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2021 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2021 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2021 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2021.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2021.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2021.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2021.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2021.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2021.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2021.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2021.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2021.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2021.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2021.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2021.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2022 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2022 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2022 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2022.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2022.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2022.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2022.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2022.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2022.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2022.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2022.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2022.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2022.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2022.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2022.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024 {
+  display: flex;
+  width: auto;
+  height: 48rem;
+  max-width: 33.5%;
+  min-width: 33.5%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--2024 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--2024 {
+    width: 75%;
+    height: 48rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2024 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024 {
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--2024.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--2024.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--2024.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2024.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2024.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2024.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--2024.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--2024.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2024.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--2024.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--2024.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--2024.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024 {
+  display: flex;
+  width: auto;
+  height: 32rem;
+  max-width: 25%;
+  min-width: 25%;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is--awards2024 {
+    display: flex;
+    max-width: 25%;
+    min-width: 25%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is--awards2024 {
+    width: 75%;
+    height: 32rem;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--awards2024 {
+    width: 100%;
+    height: 32rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024 {
+    height: auto;
+    max-width: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.swiper-slide.is--awards2024.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is--awards2024.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is--awards2024.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--awards2024.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--awards2024.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--awards2024.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is--awards2024.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is--awards2024.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--awards2024.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is--awards2024.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is--awards2024.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is--awards2024.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.ways25-community {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: 20rem;
+  grid-template-rows: 27.5rem auto;
+
+  background-color: transparent;
+}
+
+.swiper-slide.is-council25 {
+  display: flex;
+  overflow: clip;
+  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  border-radius: 1.5rem;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is-council25 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is-council25 {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-council25 {
+    width: 100%;
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25 {
+    height: auto;
+    max-width: none;
+  }
+}
+
+.swiper-slide.is-council25.is--2nd {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.swiper-slide.is-council25.is--2nd.is-centered {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.swiper-slide.is-council25.is-yuval {
+  display: flex;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-council25.is-yuval {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fc_uOfr-G6dCoU1anVEP9xZJ5nHyPl9Ag6R16IAhwwGw50.webp");
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-wojtek {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1fe_ZwUqQN2CHFyrlcyNbzHQCbIxmaeQFtqTUdTe2Ph5TTo.webp");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-wojtek {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is-council25.is-aleksandra {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ff_t3b7cg5kGPxVRZWRcyr1eudE8xxwmb9nDYKX-aLsl9o.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is-council25.is-kalina {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d201_sEykW3-lcsMtB1dAiy-PmpDTRfn1bk5KYx63wvIc7co.webp");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-kalina {
+    padding: 1rem;
+  }
+}
+
+.swiper-slide.is-council25.is-pawel {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d202_wKtyVOUph-z1F4g0tiCsDjz8kJABBrcgSK20OSgKZSE.webp");
+  background-position: 0px 0px, 0% 100%;
+  background-size: auto, cover;
+}
+
+.swiper-slide.is-council25.is-dziedzic {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25c_Wojtek%20Dziedzic.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-dziedzic {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-luczkanyn {
+  flex: 0 0 auto;
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25b_Wojtek%20%C5%81uczkanyn.webp");
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-luczkanyn {
+    background-position: 0px 0px, 0% 50%;
+    background-size: auto, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-manugiewicz {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25a_Tomasz%20Manugiewicz.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-manugiewicz {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-zygmunt {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d258_Agnieszka%20Zygmunt.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-zygmunt {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-gierasimiuk {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d274_Mask%20group-1.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-gierasimiuk {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-rudnicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d242_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-rudnicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-sieron {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d24a_Anna%20Sieron%CC%81.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-sieron {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-sukiennik {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d272_Mask%20group.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-sukiennik {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-cupial {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d270_Kamil%20Cupia%C5%82.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-council25.is-cupial {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-cupial {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-kohut {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d25d_Piotr%20Kohut.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-kohut {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-piatek {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d273_image%206.webp");
+  background-position: 0px 0px, 90% 30%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-piatek {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-krzanicki {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d248_Marcin%20Krzanicki.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-krzanicki {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-wozniak {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d271_Sebastian%20Woz%CC%81niak.webp");
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-council25.is-wozniak {
+    background-position: 0px 0px, 50% 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-wozniak {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-berens {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d246_image%205.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-berens {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25.is-pyra {
+  background-image: linear-gradient(360deg, black, hsla(0, 0.00%, 100.00%, 0.00)), url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d249_Andrzej%20Pyra.webp");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25.is-pyra {
+    background-size: 130px, cover;
+  }
+}
+
+.swiper-slide.is-council25 {
+  display: flex;
+  overflow: clip;
+  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  border-radius: 1.5rem;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+  background-image: none;
+  background-size: auto;
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide.is-council25 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper-slide.is-council25 {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-council25 {
+    width: 100%;
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .swiper-slide.is-council25 {
+    height: auto;
+    max-width: none;
+  }
+}
+
+.swiper-slide.is-council25.is-talk-to-us {
+  width: 26rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-council25.is-talk-to-us {
+    height: auto;
+    max-width: 100%;
+    flex: 0 auto;
+  }
+}
+
+.home25-community-slide_portrait {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.home25-community-slide_portrait-asset {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home25-community-slide_content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+
+  border-radius: 1.5rem;
+
+  background-color: #111;
+}
+
+.ways25-text-size-40 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-text-size-40.text-weight-semibold {
+    font-size: 1.5rem;
+  }
+}
+
+.text-weight-semibold {
+  font-weight: 600;
+}
+
+.home25-community-slide_author {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  grid-column-gap: 0.125rem;
+  grid-row-gap: 0.125rem;
+
+  border-radius: 1rem;
+
+  background-color: #32d5b4;
+
+  color: var(--main-black);
+}
+
+.ways25-text-size-24 {
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.ways25-text-size-24.text-weight-semibold {
+  font-weight: 600;
+}
+
+.ways25-text-size-24.text-weight-semibold.text-style-uppercase {
+  position: relative;
+  z-index: 3;
+}
+
+.text-style-uppercase {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 479px) {
+  .text-style-uppercase {
+    line-height: 1.4;
+  }
+}
+
+.is--text-bold {
+  font-weight: 700;
+}
+
+#w-node-_2c46a2b7-11bb-01d8-ee6b-cf4aa6609a89-a6609a88 {
+}
+#w-node-_2c46a2b7-11bb-01d8-ee6b-cf4aa6609a8b-a6609a88 {
+  grid-row-start: span 2;
+  grid-row-end: span 2;
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+}
+#w-node-_2c46a2b7-11bb-01d8-ee6b-cf4aa6609a8e-a6609a88 {
+}

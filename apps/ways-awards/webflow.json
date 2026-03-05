@@ -1,0 +1,14 @@
+{
+  "devlink": {
+    "rootDir": "./devlink",
+    "siteId": "6846a22a95d3c778d528ce77",
+    "cssModules": true
+  },
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1771448483742,
+      "version": "1.12.0"
+    }
+  }
+}

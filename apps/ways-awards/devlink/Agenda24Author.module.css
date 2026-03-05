@@ -1,0 +1,21 @@
+.agenda24-grid-item_middle-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.agenda24-grid-item_middle-author-name {
+  font-weight: 500;
+}
+
+.agenda24-grid-item_middle-author-position {
+  opacity: 0.5;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#w-node-_337b3aa3-8115-e0b0-0854-944dc4b9f51b-c4b9f51b {
+}

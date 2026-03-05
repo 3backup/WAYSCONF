@@ -1,0 +1,118 @@
+.ways25-button-secondary {
+  padding: 1.25rem 4.5rem;
+
+  border-style: solid;
+  border-color: #111;
+  border-radius: 100vw;
+
+  background-color: #252525;
+
+  transition: all 200ms ease;
+
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+}
+
+.ways25-button-secondary:where(.w-variant-928d4469-ccb5-4912-b930-6914bf0b655b) {
+  background-color: var(--accessible-components-white-smoke);
+  color: black;
+}
+
+.ways25-button-secondary:where(.w-variant-7b983af5-6cb7-7533-7f6f-6b1e9ff656dd) {
+  padding: 0.625rem 1.5rem;
+  border-style: none;
+  border-width: 1px;
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.ways25-button-secondary:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+  padding: 0.625rem 1.5rem;
+
+  border-style: none;
+  border-width: 1px;
+
+  background-color: white;
+
+  pointer-events: auto;
+
+  color: black;
+  text-transform: none;
+}
+
+.ways25-button-secondary:hover {
+  background-color: var(--accessible-components-white-smoke);
+  color: black;
+}
+
+.ways25-button-secondary:hover:where(.w-variant-928d4469-ccb5-4912-b930-6914bf0b655b) {
+  background-color: #252525;
+  color: white;
+}
+
+.ways25-button-secondary:hover:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+  background-color: #252525;
+  color: white;
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-button-secondary {
+    padding: 0.625rem 0.25rem;
+    flex: 0 0 auto;
+    text-transform: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-button-secondary:where(.w-variant-7b983af5-6cb7-7533-7f6f-6b1e9ff656dd) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    flex: 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-button-secondary:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.ways25-button-secondary.white {
+  background-color: white;
+  color: black;
+}
+
+.ways25-button-secondary.white:hover {
+  background-color: #252525;
+  color: white;
+}
+
+.text-style-nowrap {
+  pointer-events: none;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.text-style-nowrap:where(.w-variant-7b983af5-6cb7-7533-7f6f-6b1e9ff656dd) {
+  font-size: 1rem;
+}
+
+.text-style-nowrap:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+  font-size: 1rem;
+}
+
+.is--text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-style-nowrap.is-custom {
+  pointer-events: auto;
+}
+
+.text-style-nowrap.is-small {
+  font-size: 0.875rem;
+}

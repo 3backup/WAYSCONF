@@ -53,11 +53,42 @@ export type ApiProject = {
   thumbnailUrlThird?: string | null;
   organisation?: string | null;
   clientName?: string | null;
+  clientTimePeriod?: string | null;
+  toolsAndFramework?: string | null;
+  team?: string | null;
+  services?: string | null;
+  link?: string | null;
+  demoLink?: string | null;
+  materialsLink?: string | null;
+  targetAudience?: string | null;
+  vibeCode?: string | null;
+  noCode?: string | null;
+  projectOutcomes?: string | null;
+  type?: string | null;
+  casestudyLink?: string | null;
+  linkRich?: string | null;
+  linkRichText?: string | null;
+  whyYou?: string | null;
+  votes?: number | string | null;
   [key: string]: unknown;
 };
 
+function normalizeProjectKeys(project: ApiProject): ApiProject {
+  if (!project || typeof project !== "object") return project;
+  const out: Record<string, unknown> = { ...project };
+  for (const [key, value] of Object.entries(project)) {
+    if (!key.includes("_")) continue;
+    const camelKey = key.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
+    if (!(camelKey in out)) {
+      out[camelKey] = value;
+    }
+  }
+  return out as ApiProject;
+}
+
 function sanitizeProject(p: ApiProject): ApiProject {
-  const s = sanitizeShallowStrings(p) as ApiProject;
+  const normalized = normalizeProjectKeys(p);
+  const s = sanitizeShallowStrings(normalized) as ApiProject;
   s.name = stripWrappingQuotes(s.name ?? "");
   s.slug = stripWrappingQuotes(String(s.slug ?? ""));
   s.organisation =

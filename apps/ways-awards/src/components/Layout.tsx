@@ -1,5 +1,4 @@
-import { AwardsNavbar } from "./AwardsNavbar";
-import { Footer } from "./Footer";
+import { AwardsNavbar, AwardsFooter } from "@waysconf/ui";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -23,7 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <AwardsNavbar />
         <main className="main-content">{children}</main>
       </div>
-      <Footer />
+      <AwardsFooter email="hello@waysconf.com" />
     </>
   );
 }

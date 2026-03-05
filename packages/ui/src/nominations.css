@@ -51,6 +51,48 @@
   align-items: center;
 }
 
+.category-filter-btn {
+  border-radius: 1000px;
+  background: var(--grey, #111);
+  backdrop-filter: blur(36px);
+  display: flex;
+  height: 48px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border: none;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "General Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+
+.category-filter-btn:hover {
+  background: var(--grey-light, #2E2E2E);
+  transform: translateY(-1px);
+}
+
+.category-filter-btn.active {
+  background-color: var(--grey-light, #2E2E2E);
+  color: var(--white, #FFF);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.category-filter-text {
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+}
+
 .filters-overlay-button {
   display: flex;
   align-items: center;
@@ -258,14 +300,20 @@
   bottom: 12px;
   left: 12px;
   border-radius: 10px;
-  background: var(--grey-light, #252525);
+  background: var(--light-grey, #252525);
   display: flex;
+  padding: 12px;
   align-items: center;
   gap: 8px;
-  padding: 12px 16px;
   color: var(--white, #FFF);
-  font-size: 0.875rem;
+  text-align: center;
+  font-family: "General Sans";
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
   z-index: 10;
 }
 

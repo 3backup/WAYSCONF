@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "GeneralSans-Variable";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans Variable";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Generalsans Variable";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1c5_Satoshi-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://cdn.prod.website-files.com/6846a22a95d3c778d528ce77/6846a22a95d3c778d528d1ea_Satoshi-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-primary: "GeneralSans-Variable", "General Sans Variable", "General Sans",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "GeneralSans-Variable", "General Sans Variable", "General Sans",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display-medium: "GeneralSans-Variable", "General Sans Variable",
+    "General Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display-semibold: "GeneralSans-Variable", "General Sans Variable",
+    "General Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  font-family: "GeneralSans-Variable", "General Sans Variable", "General Sans",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html,
+body {
+  font-family: "GeneralSans-Variable", "General Sans Variable", "General Sans",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body span,
+body div,
+body a,
+body button,
+body input,
+body textarea,
+body select,
+body label,
+body .navbar1_component,
+body .navbar1_menu,
+body .navbar1_logo-link,
+body .navbar1_container,
+body .w-layout-grid,
+body .awards-project-grid,
+body .contact-hero-grid_content-left,
+body .is--h1,
+body .is--h4,
+body .is--paragraph,
+body .is--paragraph-big,
+body .is--paragraph-small {
+  font-family: "GeneralSans-Variable", "General Sans Variable", "General Sans",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+}

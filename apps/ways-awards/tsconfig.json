@@ -14,6 +14,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "devlink/*": [
+        "./devlink/*"
       ]
     },
     "target": "ES2017",

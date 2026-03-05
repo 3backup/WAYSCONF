@@ -1,0 +1,138 @@
+.contact-form-input_wrapper {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form-input_wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-form-input_wrapper.is--c4p {
+  display: flex;
+  margin-top: 0rem;
+  flex-direction: column;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.contact-form-input_wrapper.margin-top._16px {
+  margin-top: 1rem;
+}
+
+.contact-form-input {
+  height: 4rem;
+  margin-bottom: 0px;
+  padding: 1rem;
+
+  border: 1px solid var(--main-ash);
+  border-radius: 0.5rem;
+
+  background-color: black;
+
+  transition: all 200ms ease;
+
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1920px) {
+  .contact-form-input {
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+    font-weight: 500;
+  }
+}
+
+.contact-form-input:hover {
+  border-color: var(--main--silver);
+}
+
+.contact-form-input:focus {
+  outline-color: hsla(188.45070422535213, 92.27%, 36.41%, 1.00);
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.contact-form-input.is--textarea {
+  min-height: 12rem;
+  text-decoration: none;
+}
+
+.contact-form-input.is--textarea.is--long {
+  height: 24rem;
+}
+
+.contact-form-input.is--textarea.is-project {
+  flex: 1;
+}
+
+.contact-form-input.cc-error {
+  background-color: hsla(0, 100.00%, 50.00%, 0.13);
+}
+
+.contact-form-input.cc-valid {
+  border-color: var(--main--white);
+}
+
+.contact-form-input.is--white {
+  border-color: var(--main--white);
+  background-color: hsla(0, 0.00%, 0.00%, 0.40);
+}
+
+.contact-form-input.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.hide:where(.w-variant-001a15e8-3d8d-55be-4cfc-f7d668e39e74) {
+  display: none;
+}
+
+.contact-form-input.is-upload {
+  position: relative;
+  height: auto;
+  padding: 0rem;
+  border-style: none;
+}
+
+.contact-form-input_label {
+  position: absolute;
+  left: 0%;
+  top: -1.5rem;
+  right: auto;
+  bottom: auto;
+
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+
+  background-color: transparent;
+
+  font-size: 0.875rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.contact-form-input_label.is--larger {
+  margin-top: 2rem;
+}
+
+.contact-form-input_label.is--larger.is-custom {
+  position: static;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-input_label.cc-error {
+  color: hsla(0, 100.00%, 50.00%, 1.00);
+}

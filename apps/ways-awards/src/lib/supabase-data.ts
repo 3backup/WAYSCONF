@@ -125,6 +125,8 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
       .filter(Boolean) as ApiCategory[];
     const linkToCaseStudy =
       r.linkToCaseStudy ?? r.linkToCaseStudyUrl ?? r.linkToCaseStudyPlain ?? null;
+    const caseStudyLink =
+      r.casestudyLink ?? r.caseStudyLink ?? r.caseStudyUrl ?? null;
     return {
       id: String(r.id),
       name: stripWrappingQuotes(String(r.name ?? "")),
@@ -133,6 +135,9 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
       excerpt: r.excerpt != null ? String(r.excerpt) : null,
       linkToCaseStudy: linkToCaseStudy != null ? String(linkToCaseStudy) : null,
       caseStudy: String(r.caseStudy ?? ""),
+      whyYou: r.whyYou != null ? String(r.whyYou) : "",
+      linkRich: r.linkRich != null ? String(r.linkRich) : "",
+      linkRichText: r.linkRichText != null ? String(r.linkRichText) : "",
       thumbnailUrl: r.thumbnailUrl != null ? String(r.thumbnailUrl) : null,
       thumbnailUrlSecondary:
         r.thumbnailUrlSecondary != null
@@ -144,6 +149,25 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
         r.organisation != null ? stripWrappingQuotes(String(r.organisation)) : null,
       clientName:
         r.clientName != null ? stripWrappingQuotes(String(r.clientName)) : null,
+      clientTimePeriod:
+        r.clientTimePeriod != null ? String(r.clientTimePeriod) : null,
+      toolsAndFramework:
+        r.toolsAndFramework != null ? String(r.toolsAndFramework) : null,
+      team: r.team != null ? String(r.team) : null,
+      services: r.services != null ? String(r.services) : null,
+      link: r.link != null ? String(r.link) : null,
+      demoLink: r.demoLink != null ? String(r.demoLink) : null,
+      materialsLink:
+        r.materialsLink != null ? String(r.materialsLink) : null,
+      targetAudience:
+        r.targetAudience != null ? String(r.targetAudience) : null,
+      vibeCode: r.vibeCode != null ? String(r.vibeCode) : null,
+      noCode: r.noCode != null ? String(r.noCode) : null,
+      projectOutcomes:
+        r.projectOutcomes != null ? String(r.projectOutcomes) : null,
+      type: r.type != null ? String(r.type) : null,
+      casestudyLink:
+        caseStudyLink != null ? String(caseStudyLink) : null,
       categories: categoriesList,
     } as ApiProject;
   });
@@ -249,6 +273,8 @@ export async function getProjectBySlugFromSupabase(
   const linkToCaseStudy =
     r.linkToCaseStudy ?? r.linkToCaseStudyUrl ?? r.linkToCaseStudyPlain ?? null;
 
+  const caseStudyLink =
+    r.casestudyLink ?? r.caseStudyLink ?? r.caseStudyUrl ?? null;
   return {
     id: String(r.id),
     name: stripWrappingQuotes(String(r.name ?? "")),
@@ -257,6 +283,9 @@ export async function getProjectBySlugFromSupabase(
     excerpt: r.excerpt != null ? String(r.excerpt) : null,
     linkToCaseStudy: linkToCaseStudy != null ? String(linkToCaseStudy) : null,
     caseStudy: String(r.caseStudy ?? ""),
+    whyYou: r.whyYou != null ? String(r.whyYou) : "",
+    linkRich: r.linkRich != null ? String(r.linkRich) : "",
+    linkRichText: r.linkRichText != null ? String(r.linkRichText) : "",
     thumbnailUrl: r.thumbnailUrl != null ? String(r.thumbnailUrl) : null,
     thumbnailUrlSecondary:
       r.thumbnailUrlSecondary != null ? String(r.thumbnailUrlSecondary) : null,
@@ -266,6 +295,25 @@ export async function getProjectBySlugFromSupabase(
       r.organisation != null ? stripWrappingQuotes(String(r.organisation)) : null,
     clientName:
       r.clientName != null ? stripWrappingQuotes(String(r.clientName)) : null,
+    clientTimePeriod:
+      r.clientTimePeriod != null ? String(r.clientTimePeriod) : null,
+    toolsAndFramework:
+      r.toolsAndFramework != null ? String(r.toolsAndFramework) : null,
+    team: r.team != null ? String(r.team) : null,
+    services: r.services != null ? String(r.services) : null,
+    link: r.link != null ? String(r.link) : null,
+    demoLink: r.demoLink != null ? String(r.demoLink) : null,
+    materialsLink:
+      r.materialsLink != null ? String(r.materialsLink) : null,
+    targetAudience:
+      r.targetAudience != null ? String(r.targetAudience) : null,
+    vibeCode: r.vibeCode != null ? String(r.vibeCode) : null,
+    noCode: r.noCode != null ? String(r.noCode) : null,
+    projectOutcomes:
+      r.projectOutcomes != null ? String(r.projectOutcomes) : null,
+    type: r.type != null ? String(r.type) : null,
+    casestudyLink:
+      caseStudyLink != null ? String(caseStudyLink) : null,
     categories: categoriesList,
   } as ApiProject;
 }

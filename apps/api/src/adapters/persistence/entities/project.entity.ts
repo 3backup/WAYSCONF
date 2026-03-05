@@ -63,6 +63,15 @@ export class ProjectEntity extends BaseEntity {
   contactPersonNumber!: string | null;
 
   @Column({ type: 'varchar', length: 300, nullable: true })
+  link!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  demoLink!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  materialsLink!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
   thumbnailUrl!: string | null;
 
   @Column({ type: 'varchar', length: 300, nullable: true })
@@ -82,6 +91,24 @@ export class ProjectEntity extends BaseEntity {
 
   @Column({ type: 'varchar', length: 5000 })
   whyYou!: string;
+
+  @Column({ type: 'text', nullable: true })
+  targetAudience!: string | null;
+
+  @Column({ type: 'text', nullable: true })
+  projectOutcomes!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  vibeCode!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  noCode!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true, name: 'type' })
+  type!: string | null;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  casestudyLink!: string | null;
 
   @Column({ type: 'varchar', length: 300, nullable: true, name: 'linkToCaseStudy' })
   linkToCaseStudyUrl!: string | null;

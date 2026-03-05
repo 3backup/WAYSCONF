@@ -1,0 +1,356 @@
+.tickets-faq_dropdown {
+  width: 80%;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 0 0 auto;
+  border: 1px solid var(--main-ash);
+}
+
+@media screen and (max-width: 991px) {
+  .tickets-faq_dropdown {
+    width: 100%;
+  }
+}
+
+.tickets-faq_dropdown.is--filters {
+  border-style: solid;
+}
+
+.is--display-hidden {
+  display: none;
+}
+
+.tickets-faq_dropdown.s-in {
+  overflow: hidden;
+  width: 100%;
+  border-style: none;
+  border-radius: 1rem;
+  background-color: var(--greynew);
+}
+
+.start-faq_dropdown-toggle {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+
+  border: 1px none var(--main-ash);
+
+  background-color: hsla(0, 0.00%, 0.00%, 0.40);
+
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+@media screen and (max-width: 767px) {
+  .start-faq_dropdown-toggle {
+    padding: 1rem;
+  }
+}
+
+.start-faq_dropdown-toggle.is--filters {
+  padding: 1rem;
+  border-style: none;
+}
+
+.tickets-faq-dropdown_question {
+  white-space: pre-wrap;
+}
+
+.tickets-faq-dropdown_question.is--waysconf25 {
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.icon-embed-small {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-embed-small.opacity-13 {
+  flex: 0 0 auto;
+  opacity: 0.13;
+}
+
+.tickets-faq_dropdown-list {
+  position: relative;
+
+  display: flex;
+  overflow: hidden;
+  height: auto;
+  padding: 0rem;
+
+  border: 1px none var(--main-ash);
+
+  background-color: hsla(0, 0.00%, 0.00%, 0.40);
+}
+
+.tickets-faq_dropdown-list.is--filters {
+  display: flex;
+  padding: 0rem;
+  border-style: none;
+}
+
+.is--paragraph {
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+@media screen and (max-width: 767px) {
+  .is--paragraph {
+    font-size: 0.875rem;
+  }
+}
+
+.is--paragraph.is--text-color-silver {
+  color: hsla(0, 0.00%, 90.20%, 0.80);
+}
+
+@media screen and (min-width: 1920px) {
+  .is--paragraph.is--text-color-silver {
+    text-decoration: none;
+  }
+}
+
+.is--text-color-silver {
+  grid-row-gap: 1rem;
+  color: var(--main--silver);
+}
+
+@media screen and (min-width: 1920px) {
+  .is--text-color-silver {
+    text-decoration: none;
+  }
+}
+
+.is--paragraph.is--text-color-silver.is--opacity-80 {
+  opacity: 0.8;
+}
+
+.is--paragraph.is--text-color-silver.is--tickets-faq {
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .is--paragraph.is--text-color-silver.is--tickets-faq {
+    padding: 1rem;
+  }
+}
+
+.is--paragraph.is--text-color-silver.margin-top-custom0 {
+  margin-top: 0.75rem;
+}
+
+.is--text-uppercase {
+  text-transform: uppercase;
+}
+
+.is--caption-small {
+  color: var(--main--white);
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.is--paragraph.is--text-color-silver.is--text-uppercase.is--small {
+  font-size: 0.875rem;
+}
+
+.is--paragraph.is--text-color-silver.is--text-color-white {
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+.is--text-color-white {
+  color: var(--main--white);
+}
+
+.is--paragraph.is--text-color-silver.is--agenda-new {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.is--paragraph.is--text-color-silver.is--agenda-new.is--new-idea {
+  max-height: 3.8rem;
+}
+
+.is--paragraph.is--text-color-silver.is--vertical {
+  flex-direction: column;
+  grid-row-gap: 0rem;
+}
+
+.text-style-nowrap {
+  pointer-events: none;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.text-style-nowrap:where(.w-variant-7b983af5-6cb7-7533-7f6f-6b1e9ff656dd) {
+  font-size: 1rem;
+}
+
+.text-style-nowrap:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+  font-size: 1rem;
+}
+
+.is--paragraph.is--text-color-silver.is--custom1 {
+  flex-wrap: wrap;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .width-50 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .width-50 {
+    width: 90%;
+  }
+}
+
+.is--text-center {
+  text-align: center;
+}
+
+.is--paragraph.is--text-color-silver.is--startup-faq {
+  padding: 0.5rem 1.5rem 1.5rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .is--paragraph.is--text-color-silver.is--startup-faq {
+    padding: 1rem;
+  }
+}
+
+.is--paragraph.is--text-color-silver.is--centered {
+  text-align: center;
+}
+
+.is--centered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.is--paragraph.is--text-color-silver.width-70 {
+  width: 70%;
+}
+
+@media screen and (max-width: 479px) {
+  .is--paragraph.is--text-color-silver.is-awards {
+    width: 100%;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.is--paragraph.is--text-color-silver.is-fairs25 {
+  text-transform: none;
+}
+
+.is--paragraph.is--text-bold {
+  font-weight: 700;
+}
+
+.is--text-bold {
+  font-weight: 700;
+}
+
+.is--paragraph.is--tickets-grid-item {
+  position: relative;
+  bottom: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .is--paragraph.is--tickets-grid-item {
+    bottom: 0.25rem;
+  }
+}
+
+.is--paragraph.iss-language {
+  margin-left: 0.5rem;
+}
+
+.is--bg-color-silver {
+  background-color: var(--main--silver);
+}
+
+.is--paragraph.is--agenda-grid-title {
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.is--h3 {
+  font-size: 2rem;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+@media screen and (max-width: 767px) {
+  .is--h3 {
+    font-size: 2rem;
+  }
+}
+
+.is--h5 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .is--h5 {
+    font-size: 1rem;
+  }
+}
+
+.is--paragraph.is--infopack-hero {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .is--paragraph.is--infopack-hero {
+    text-transform: uppercase;
+  }
+}
+
+.is--paragraph.is--40 {
+  max-width: 40%;
+}
+
+.is--paragraph.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.is--paragraph.text-style-nowrap.is--text-color-silver {
+  grid-row-gap: 0rem;
+}
+
+.is--paragraph ol {
+  margin-bottom: 0px;
+  padding-left: 16px;
+}

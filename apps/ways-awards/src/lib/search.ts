@@ -14,6 +14,15 @@ const includesNormalized = (source: string | undefined | null, q: string) => {
   return normalizeForSearch(source).includes(q);
 };
 
+const toVoteCount = (value: unknown): number => {
+  if (typeof value === "number") return Number.isFinite(value) ? value : 0;
+  if (typeof value === "string") {
+    const parsed = Number.parseInt(value, 10);
+    return Number.isFinite(parsed) ? parsed : 0;
+  }
+  return 0;
+};
+
 const computeQueryScore = (p: ApiProject, q: string): number => {
   if (includesNormalized(p.name, q)) return 3;
   if (
@@ -34,9 +43,9 @@ const compareProjectsByFilterType = (
 ) => {
   switch (filter) {
     case FilterType.BY_VOTES_ASC:
-      return (a.votes ?? 0) - (b.votes ?? 0);
+      return toVoteCount(a.votes) - toVoteCount(b.votes);
     case FilterType.BY_VOTES_DESC:
-      return (b.votes ?? 0) - (a.votes ?? 0);
+      return toVoteCount(b.votes) - toVoteCount(a.votes);
     case FilterType.AZ:
       return normalizeText(a.name).localeCompare(normalizeText(b.name), undefined, {
         sensitivity: "base",

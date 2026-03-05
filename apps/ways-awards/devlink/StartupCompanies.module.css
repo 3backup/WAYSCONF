@@ -1,0 +1,249 @@
+.padding-vertical {
+  position: static;
+  width: 100%;
+}
+
+.padding-vertical.padding-custom0 {
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.padding-custom0 {
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padding-vertical.padding-custom0 {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .padding-vertical.padding-custom0 {
+    padding-bottom: 4rem;
+  }
+}
+
+.padding-vertical.padding-custom0.is-hero-numbers {
+  padding-top: 6rem;
+  padding-bottom: 0rem;
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.padding-custom0.is-hero-numbers {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padding-vertical.padding-custom0.is-hero-numbers {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .padding-vertical.padding-custom0.is-hero-numbers {
+    padding-top: 2rem;
+  }
+}
+
+.padding-vertical.padding-custom1 {
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+  .padding-vertical.padding-custom1 {
+    padding-bottom: 3rem;
+  }
+}
+
+.padding-vertical.is--relative {
+  position: static;
+  height: auto;
+  clear: both;
+}
+
+.is--relative {
+  position: relative;
+}
+
+.padding-vertical.padding-custom2 {
+  padding-top: 9.375rem;
+}
+
+.padding-vertical.padding-custom3 {
+  padding-top: 5rem;
+}
+
+.padding-vertical.padding-120 {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.padding-vertical.padding-custom7 {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.padding-vertical.padding-custom6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.padding-vertical.custom-custom5 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.padding-vertical.is--128 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.is--128 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.padding-vertical.is--80 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.padding-vertical.is--96 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.padding-vertical.padding-custom-contact {
+  position: relative;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .padding-vertical.padding-custom-contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.padding-custom-contact {
+    padding-bottom: 0rem;
+  }
+}
+
+.padding-vertical.padding-custom-contact.is-custom {
+  padding-top: 2.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .padding-vertical.padding-custom-contact.is-submit {
+    padding-top: 1rem;
+  }
+}
+
+.padding-vertical.is--blogpost-content {
+  padding-bottom: 6.5rem;
+}
+
+@media screen and (max-width: 479px) {
+  .padding-vertical.is--blogpost-content {
+    padding-top: 2rem;
+  }
+}
+
+.padding-vertical.is--blog-title {
+  margin-top: 0rem;
+  padding-top: 6rem;
+  padding-bottom: 3.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.is--blog-title {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padding-vertical.is--blog-title {
+    padding-top: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .padding-vertical.is--blog-title {
+    padding-top: 7.5rem;
+  }
+}
+
+.padding-vertical.padding-custom-160 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.padding-custom-160 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.padding-vertical.padding-custom-2137 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.padding-custom-2137 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padding-vertical.padding-custom-2137 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .padding-vertical.padding-custom-2137 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.padding-vertical.padding-custom-startup {
+  position: relative;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .padding-vertical.padding-custom-startup {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .padding-vertical.padding-custom-startup {
+    padding-bottom: 0rem;
+  }
+}
+
+.padding-vertical.padding-custom-startup.is-custom {
+  padding-top: 2.5rem;
+}

@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start --port 3002",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "devlink:login": "webflow auth login",
+    "devlink:init": "webflow cloud init",
+    "devlink:pull": "webflow devlink sync",
+    "devlink:sites": "node scripts/list-webflow-sites.mjs",
+    "devlink:components": "node scripts/list-webflow-components.mjs",
+    "devlink:fix-quotes": "node scripts/fix-devlink-quotes.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.96.0",
@@ -22,6 +28,7 @@
     "@types/react": "18.3.4",
     "@types/react-dom": "18.3.1",
     "@waysconf/tsconfig": "workspace:*",
+    "@webflow/webflow-cli": "^1.12.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.15",

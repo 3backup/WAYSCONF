@@ -1,10 +1,12 @@
 {
   "name": "@waysconf/ui",
   "version": "0.0.0",
-  "private": true,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -12,9 +14,16 @@
       "require": "./dist/index.js"
     },
     "./project-page.css": "./src/project-page.css",
-    "./nominations.css": "./src/nominations.css"
+    "./nominations.css": "./src/nominations.css",
+    "./components.css": "./src/components.css",
+    "./awards-home.css": "./src/awards-home.css",
+    "./fonts.css": "./src/fonts.css",
+    "./awards-jury-form.css": "./src/awards-jury-form.css"
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsup src/index.tsx --format cjs,esm --dts --external react --external react-dom",
     "type-check": "tsc --noEmit",

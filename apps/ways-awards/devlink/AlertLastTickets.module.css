@@ -1,0 +1,214 @@
+.chip-wrapper-copy {
+  display: flex;
+  width: auto;
+  padding: 0.625rem 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+
+  border: 1px solid var(--main--silver);
+  border-radius: 100rem;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.16);
+
+  backdrop-filter: blur(5px);
+
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+  .chip-wrapper-copy {
+    border-color: var(--main--silver);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chip-wrapper-copy {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.is--bg-gradient-blue {
+  background-image: linear-gradient(225deg, #77eedf, #1f4ff7);
+}
+
+.chip-wrapper-copy.is--bg-gradient-blue.is--text-no-wrap {
+  color: var(--main-black);
+  white-space: nowrap;
+}
+
+.chip-wrapper-copy.is--location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--main--silver);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .chip-wrapper-copy.is--location {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: flex-start;
+
+    text-align: center;
+  }
+}
+
+.chip-wrapper-copy.is--grid.is--margin-top {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .chip-wrapper-copy.is--grid.is--margin-top {
+    margin-top: 0rem;
+    align-items: flex-start;
+  }
+}
+
+.chip-wrapper-copy.is--year {
+  display: flex;
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 0.25rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .chip-wrapper-copy.is--year {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chip-wrapper-copy.is--year {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .chip-wrapper-copy.is--year {
+    display: flex;
+  }
+}
+
+.chip-wrapper-copy.is--path {
+  border-color: #3d0099;
+  background-color: hsla(263.921568627451, 100.00%, 30.00%, 0.40);
+  color: hsla(122, 0.00%, 100.00%, 1.00);
+}
+
+.chip-wrapper-copy.is--speaker-path {
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 0.25rem;
+}
+
+.chip-wrapper-copy.is--name {
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 0.25rem;
+}
+
+.chip-wrapper-copy.is--date {
+  position: sticky;
+  top: 9rem;
+}
+
+.chip-wrapper-copy.is--smaller {
+  padding: 0.25rem 0.75rem;
+}
+
+.chip-wrapper-copy.is--white {
+  background-color: hsla(0, 0.00%, 100.00%, 1.00);
+  color: var(--main-black);
+}
+
+.chip-wrapper-copy.is--white:global(.w--current):hover {
+  background-color: hsla(0, 0.00%, 70.67%, 1.00);
+}
+
+.chip-wrapper-copy.is--text-center {
+  text-align: center;
+}
+
+.is--text-center {
+  text-align: center;
+}
+
+.is--centered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.chip-wrapper-copy.is--agenda-days {
+  justify-content: center;
+}
+
+.chip-wrapper-copy.is--agenda-days_chip:hover {
+  background-color: hsla(0, 0.00%, 0.00%, 0.24);
+}
+
+.chip-wrapper-copy.is--agenda-days_chip:global(.w--current) {
+  background-color: hsla(0, 0.00%, 100.00%, 1.00);
+  color: hsla(0, 0.00%, 0.00%, 1.00);
+}
+
+.chip-wrapper-copy.no-gap {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+}
+
+.chip-wrapper-copy.is--link {
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 0.25rem;
+}
+
+.chip-wrapper-copy.is--link:hover {
+  background-color: hsla(0, 0.00%, 0.00%, 0.16);
+}
+
+.is--bg-color-blue {
+  background-color: #3100f5;
+}
+
+.chip-wrapper-copy.is--blue {
+  border-color: hsla(220.36363636363637, 94.83%, 22.75%, 1.00);
+  background-color: hsla(220.36363636363637, 94.83%, 22.75%, 0.40);
+}
+
+@media screen and (max-width: 479px) {
+  .chip-wrapper-copy.is--mobile-new {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.chip-wrapper-copy.no--border {
+  border-style: none;
+}
+
+.chip-wrapper-copy.is-alert {
+  padding: 0.5rem 1rem;
+
+  border-width: 0px;
+  border-color: hsla(359, 100.00%, 50.00%, 1.00);
+
+  background-color: hsla(0, 43.31%, 22.33%, 0.16);
+
+  color: hsla(30, 100.00%, 50.00%, 1.00);
+  -webkit-text-stroke-color: hsla(312, 100.00%, 50.00%, 1.00);
+}
+
+@media screen and (max-width: 479px) {
+  .chip-wrapper-copy.is-alert {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    white-space: normal;
+  }
+}

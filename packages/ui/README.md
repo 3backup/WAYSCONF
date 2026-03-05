@@ -1,42 +1,50 @@
 # @waysconf/ui
 
-Shared UI components (Button, Dropdown, MultiSelectDropdown, ViewSwitcher, Toast) built with Tailwind. Design matches dwa-voting-2026.
+Shared UI library for WaysConf apps, organized with atomic design layers:
+
+- `atoms`: smallest primitives (button, icons)
+- `molecules`: composed controls (dropdowns, view switcher, toast)
+- `sections`: app-level UI blocks (nominations filters, project detail shell)
 
 ## Usage
 
-In your app (e.g. ways-awards, waysboard):
+```tsx
+import {
+  Button,
+  Dropdown,
+  MultiSelectDropdown,
+  NominationsFiltersSection,
+  Toast,
+} from "@waysconf/ui";
+```
+
+## Styles
+
+Import shared styles from the package:
 
 ```tsx
-import { Button, Dropdown, Toast } from "@waysconf/ui";
+import "@waysconf/ui/fonts.css";
+import "@waysconf/ui/components.css";
+import "@waysconf/ui/nominations.css";
+import "@waysconf/ui/project-page.css";
 ```
 
 ## Tailwind
 
-Components use Tailwind utility classes. In your app's `tailwind.config.js` (or `tailwind.config.ts`), add this package to `content` so Tailwind generates the CSS:
-
-```js
-content: [
-  "./src/**/*.{ts,tsx}",
-  "./node_modules/@waysconf/ui/src/**/*.{ts,tsx}",
-],
-```
-
-In a monorepo with `packages/ui`:
+Some components use utility classes. Include UI sources in app `tailwind.config`:
 
 ```js
 content: [
   "./src/**/*.{ts,tsx}",
   "../../packages/ui/src/**/*.{ts,tsx}",
-],
+];
 ```
 
 ## Button with Next.js Link
-
-Pass `linkComponent` to render as a Next.js Link when `href` is set:
 
 ```tsx
 import Link from "next/link";
 import { Button } from "@waysconf/ui";
 
-<Button href="/some-page" linkComponent={Link}>Go</Button>
+<Button href="/some-page" linkComponent={Link}>Go</Button>;
 ```

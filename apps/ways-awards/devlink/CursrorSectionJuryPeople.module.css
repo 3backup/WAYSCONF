@@ -1,0 +1,830 @@
+.section-jury-people {
+  width: 100%;
+  padding: 0rem 4rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-jury-people {
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-jury-people {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.section-jury-people.navbar-container {
+  display: flex;
+  max-width: 95%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1920px) {
+  .section-jury-people.navbar-container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people.navbar-container {
+    max-width: 100%;
+    justify-content: flex-end;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-jury-people.navbar-container {
+    align-items: center;
+    grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-jury-people.navbar-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    grid-column-gap: 1rem;
+  }
+}
+
+.section-jury-people.is--full-width {
+  max-width: 100%;
+}
+
+.section-jury-people.is--register {
+  position: relative;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .section-jury-people.is--register {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.section-jury-people.is--sizing-grow {
+  flex: 1;
+}
+
+.section-jury-people.is--sizing-grow.is--custom {
+  padding-top: 1rem;
+}
+
+.is--custom {
+  position: relative;
+  z-index: 10;
+}
+
+.section-jury-people.is--800 {
+  max-width: 50rem;
+  grid-row-gap: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people.is--800 {
+    max-width: 100%;
+  }
+}
+
+.section-jury-people.is--800.blog {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-jury-people.is--aboutus {
+  justify-content: center;
+  align-self: stretch;
+}
+
+@media screen and (min-width: 1920px) {
+  .section-jury-people.is--aboutus {
+    max-width: 90rem;
+  }
+}
+
+.section-jury-people.is--blocker-smaller {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+
+  text-align: center;
+}
+
+.section-jury-people.is--sponsors-hero {
+  align-self: stretch;
+}
+
+.section-jury-people.is--sponsors-hero-video {
+  display: flex;
+  padding-right: 40%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people.is--sponsors-hero-video {
+    padding-top: 2rem;
+    padding-right: 25%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-jury-people.is--sponsors-hero-video {
+    padding-right: 40%;
+    padding-left: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-row-gap: 1rem;
+
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-jury-people.is--sponsors-hero-video {
+    padding-right: 1.5rem;
+  }
+}
+
+.section-jury-people.is--agenda-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  grid-row-gap: 1.5rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .section-jury-people.is--agenda-content {
+    position: relative;
+  }
+}
+
+.section-jury-people.is--success {
+  display: flex;
+}
+
+.section-jury-people.is--partners {
+  display: block;
+  margin-top: 4rem;
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+}
+
+@media screen and (max-width: 479px) {
+  .section-jury-people.is--partners {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.section-jury-people.is--404 {
+  display: flex;
+}
+
+.is--relative {
+  position: relative;
+}
+
+.is--z-index-1 {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1920px) {
+  .is--z-index-1 {
+    text-decoration: none;
+  }
+}
+
+.section-jury-people.avards-container {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 1rem;
+}
+
+.section-jury-people.is--infopack-container {
+  display: grid;
+  max-width: 100%;
+  padding-right: 0rem;
+  padding-left: 0rem;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people.is--infopack-container {
+    display: grid;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-jury-people.is--infopack-container {
+    display: flex;
+    padding: 0rem;
+    align-items: stretch;
+  }
+}
+
+.section-jury-people.is-custom {
+  padding-top: 0rem;
+}
+
+.section-jury-people.is-filters {
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-jury-people.is-home {
+  display: flex;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+@media screen and (max-width: 479px) {
+  .section-jury-people.is-home.s-in {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+.section-jury-people.is-workshops2024 {
+  padding-top: 8rem;
+}
+
+.section-jury-people.is-awards-projects {
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people.is-awards-projects {
+    padding-bottom: 5rem;
+  }
+}
+
+.section-jury-people.awards-jury {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jury-people.awards-jury {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-jury-people.awards-jury {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.jury-tabs-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .jury-tabs-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .jury-tabs-menu {
+    grid-column-gap: 0.25rem;
+    grid-row-gap: 0.25rem;
+  }
+}
+
+.jury-tabs-link {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+
+  border: 1px solid var(--main-ash);
+  border-radius: 100vw;
+
+  background-color: hsla(0, 0.00%, 6.67%, 1.00);
+
+  transition: all 200ms ease;
+
+  color: white;
+  font-weight: 600;
+}
+
+.jury-tabs-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.jury-tabs-link:global(.w--current) {
+  border-color: var(--accessible-components-white-smoke);
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 479px) {
+  .jury-tabs-link {
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+.icon-embed-xsmall-10 {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-embed-xsmall-10.text-color-blue {
+  color: var(--blue);
+}
+
+.icon-embed-xsmall-10.text-color-teal {
+  color: var(--teal);
+}
+
+.icon-embed-xsmall-10.text-color-pink {
+  color: var(--orange);
+}
+
+.icon-embed-xsmall-10.awards-tabs-icon {
+  display: none;
+}
+
+.jury-tabs-content {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .jury-tabs-content {
+    margin-top: 1rem;
+  }
+}
+
+.speakers-collection-wrapper {
+  width: 100%;
+}
+
+.is--display-hidden {
+  display: none;
+}
+
+.speakers-collection-wrapper.is--path.margin--top-16 {
+  margin-top: 1rem;
+}
+
+.speakers-collection-list-s-2 {
+  display: grid;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: stretch;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+@media screen and (min-width: 1920px) {
+  .speakers-collection-list-s-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .speakers-collection-list-s-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .speakers-collection-list-s-2 {
+    grid-row-gap: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .speakers-collection-list-s-2 {
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .speakers-collection-list-s-2 {
+    width: 100%;
+  }
+}
+
+.speakers-collection-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 1.5rem;
+  transition: all 500ms ease;
+}
+
+.speakers-collection-item:hover {
+  transform: translate(0px, -0.25rem);
+}
+
+.speakers-collection-item.is--speaker {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.speakers-collection-item.is--interactive {
+  overflow: hidden;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  grid-row-gap: 0rem;
+
+  border-radius: 1rem;
+}
+
+.speakers-collection-item.is--interactive:hover {
+  transform: translate(0px, 0rem);
+}
+
+@media screen and (max-width: 767px) {
+  .speakers-collection-item.is--interactive {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .speakers-collection-item.is--interactive {
+    width: 100%;
+    grid-row-gap: 0rem;
+  }
+}
+
+.speakers-collection-item.is--workshop {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+  grid-column-gap: 4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .speakers-collection-item.is--workshop {
+    padding-bottom: 2rem;
+    flex-direction: column;
+    border-bottom: 1px solid var(--main-ash);
+  }
+}
+
+.speakers-collection-item.is--partners {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.speakers-collection-link {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 99;
+
+  display: block;
+
+  cursor: ne-resize;
+}
+
+@media screen and (max-width: 767px) {
+  .speakers-collection-link {
+    line-height: 0.5;
+  }
+}
+
+.speakers-collection-link.is--display-hidden {
+  display: none;
+}
+
+.speaker-hero-grid_image-wrapper-2 {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  width: 100%;
+  padding: 0rem 1rem 0rem 0rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 767px) {
+  .speaker-hero-grid_image-wrapper-2 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.speaker-main-grid_image {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  border-radius: 1rem 1rem 0rem 0px;
+
+  object-fit: cover;
+}
+
+.speaker-main-grid_image.is-blur {
+  z-index: -1;
+  opacity: 0.6;
+  filter: blur(12rem);
+}
+
+.speaker-main-grid_image.is-blur.partners {
+  height: 15rem;
+  aspect-ratio: auto;
+}
+
+.speaker-main-grid_image.is-logo {
+  padding: 2rem;
+  object-fit: contain;
+}
+
+.speaker-main-grid_image.is-logo.is-partner {
+  position: relative;
+  height: 15rem;
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
+  aspect-ratio: auto;
+}
+
+.speaker-main-grid_image.speaker {
+  border-radius: 1rem;
+}
+
+.speaker-main-grid_wave {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: -2px;
+
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+@media screen and (min-width: 1920px) {
+  .speaker-main-grid_wave {
+    bottom: -1%;
+  }
+}
+
+.speakers-item_name-3 {
+  position: relative;
+  z-index: 4;
+
+  display: flex;
+  height: 10.5rem;
+  padding: 1rem 1rem 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  grid-row-gap: 0.25rem;
+  overflow: hidden;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  background-color: #3842f4;
+  background-image: none;
+}
+
+@media screen and (max-width: 767px) {
+  .speakers-item_name-3 {
+    height: 9.5rem;
+    width: 100%;
+  }
+}
+
+.jury-card__name {
+  margin: 0;
+  display: -webkit-box;
+  min-height: 2.5em;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.jury-card__role {
+  margin: 0;
+  min-height: 2.8em;
+  color: #fff !important;
+  opacity: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.jury-card__role a {
+  color: #fff !important;
+}
+
+.jury-more-wrap {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .jury-more-wrap {
+    margin-top: 1.5rem;
+  }
+}
+
+.fs-pagination {
+  margin-top: 4rem;
+}
+
+.ways25-button-secondary {
+  padding: 1.25rem 4.5rem;
+
+  border-style: solid;
+  border-color: #111;
+  border-radius: 100vw;
+
+  background-color: #252525;
+
+  transition: all 200ms ease;
+
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+}
+
+.ways25-button-secondary:where(.w-variant-928d4469-ccb5-4912-b930-6914bf0b655b) {
+  background-color: var(--accessible-components-white-smoke);
+  color: black;
+}
+
+.ways25-button-secondary:where(.w-variant-7b983af5-6cb7-7533-7f6f-6b1e9ff656dd) {
+  padding: 0.625rem 1.5rem;
+  border-style: none;
+  border-width: 1px;
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.ways25-button-secondary:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+  padding: 0.625rem 1.5rem;
+
+  border-style: none;
+  border-width: 1px;
+
+  background-color: white;
+
+  pointer-events: auto;
+
+  color: black;
+  text-transform: none;
+}
+
+.ways25-button-secondary:hover {
+  background-color: var(--accessible-components-white-smoke);
+  color: black;
+}
+
+.ways25-button-secondary:hover:where(.w-variant-928d4469-ccb5-4912-b930-6914bf0b655b) {
+  background-color: #252525;
+  color: white;
+}
+
+.ways25-button-secondary:hover:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+  background-color: #252525;
+  color: white;
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-button-secondary {
+    padding: 0.625rem 0.25rem;
+    flex: 0 0 auto;
+    text-transform: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-button-secondary:where(.w-variant-7b983af5-6cb7-7533-7f6f-6b1e9ff656dd) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    flex: 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ways25-button-secondary:where(.w-variant-f77d7fef-a8dc-058a-cd52-a4fc4105d929) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.ways25-button-secondary.white {
+  background-color: white;
+  color: black;
+}
+
+.ways25-button-secondary.white:hover {
+  background-color: #252525;
+  color: white;
+}
+
+#w-node-_1a82e833-81eb-a561-6a2f-e6d077882ec5-77882ea7 {
+}
+#w-node-_1a82e833-81eb-a561-6a2f-e6d077882edb-77882ea7 {
+}
+#w-node-_1a82e833-81eb-a561-6a2f-e6d077882ef1-77882ea7 {
+}
+#w-node-_1a82e833-81eb-a561-6a2f-e6d077882f07-77882ea7 {
+}
+#w-node-_1a82e833-81eb-a561-6a2f-e6d077882f1d-77882ea7 {
+}

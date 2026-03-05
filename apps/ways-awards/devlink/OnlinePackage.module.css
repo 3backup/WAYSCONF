@@ -1,0 +1,37 @@
+.tickets-grid-item_list {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.tickets-grid-item_list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-gap: 0.625rem;
+  grid-row-gap: 0.625rem;
+}
+
+.tickets-grid-item_list-item-icon {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+}
+
+.is-teal {
+  color: var(--teal);
+}
+
+.tickets-grid-item_list-item-icon.is-red {
+  color: var(--orange);
+}
+
+.tickets-grid-item_list-item-icon.is-blue {
+  color: var(--blue);
+}
+
+.tickets-grid-item_list-item-icon.is-red {
+  color: #ff6365;
+}

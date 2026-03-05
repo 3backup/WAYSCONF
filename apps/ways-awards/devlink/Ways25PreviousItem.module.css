@@ -1,0 +1,222 @@
+.home25-previous-grid_item {
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  border-radius: 1.5rem;
+
+  background-color: #111;
+}
+
+@media screen and (max-width: 479px) {
+  .home25-previous-grid_item {
+    padding: 1rem;
+  }
+}
+
+.home25-previous-grid_item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.home25-previous-grid_item-top-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.home25-previous-link {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid white;
+  border-radius: 100vw;
+
+  background-color: white;
+
+  transition: all 200ms ease;
+
+  color: black;
+}
+
+.home25-previous-link:hover {
+  border: 1px solid white;
+  background-color: #111;
+  color: white;
+}
+
+.home25-previous-link.is-spotify {
+  display: none;
+}
+
+.icon-embed-custom {
+  display: flex;
+  width: 0rem;
+  height: 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-embed-custom._20x20 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-embed-custom._20x20.color-inherit {
+  color: inherit;
+}
+
+.icon-embed-custom.custom-workshops {
+  width: auto;
+  height: 18.75rem;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-embed-custom.custom-workshops {
+    width: 30%;
+    height: auto;
+  }
+}
+
+.home25-previous-grid_item-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  flex: 1;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.ways25-heading5 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .ways25-heading5 {
+    font-size: 1.5rem;
+  }
+}
+
+.ways25-heading5.text-size-32 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 767px) {
+  .ways25-heading5.text-size-32 {
+    font-size: 1.5rem;
+  }
+}
+
+.text-size-32 {
+  font-size: 2rem;
+}
+
+.home25-previous-grid_item-bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
+.home25-previous-grid_item-bottom-author {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.25rem;
+  grid-template-columns: 3.5rem 1fr;
+  grid-template-rows: auto auto;
+}
+
+.home25-previous-grid_item-bottom-author_portrait {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 auto;
+  border-radius: 100vw;
+}
+
+.home25-previous-grid_item-bottom-author_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  grid-column-gap: 0.125rem;
+  grid-row-gap: 0.125rem;
+}
+
+.ways25-text-size-24 {
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.ways25-text-size-24.text-weight-semibold {
+  font-weight: 600;
+}
+
+.text-weight-semibold {
+  font-weight: 600;
+}
+
+.ways25-text-size-24.text-weight-semibold.text-style-uppercase {
+  position: relative;
+  z-index: 3;
+}
+
+.text-style-uppercase {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 479px) {
+  .text-style-uppercase {
+    line-height: 1.4;
+  }
+}
+
+.is--text-bold {
+  font-weight: 700;
+}
+
+.home25-previous-grid_item-bottom-logo {
+  height: auto;
+  max-height: 2rem;
+}
+
+#w-node-cba38c1b-5639-b5ef-c2ab-9121cff46623-cff46623 {
+}
+#w-node-cba38c1b-5639-b5ef-c2ab-9121cff46631-cff46623 {
+  grid-row-start: span 2;
+  grid-row-end: span 2;
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+}
+#w-node-cba38c1b-5639-b5ef-c2ab-9121cff46632-cff46623 {
+  align-self: end;
+}
+#w-node-cba38c1b-5639-b5ef-c2ab-9121cff46633-cff46623 {
+}
+#w-node-cba38c1b-5639-b5ef-c2ab-9121cff46635-cff46623 {
+  align-self: start;
+}

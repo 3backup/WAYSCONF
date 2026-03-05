@@ -22,6 +22,9 @@ export type Project = {
   titleOfTheProject: string | null;
   services: string | null;
   contactPersonNumber: string | null;
+  link: string | null;
+  demoLink: string | null;
+  materialsLink: string | null;
   thumbnailUrl: string | null;
   thumbnailUrlSecondary: string | null;
   thumbnailUrlThird: string | null;
@@ -29,6 +32,12 @@ export type Project = {
   team: string;
   linkRichText: string | null;
   whyYou: string;
+  targetAudience: string | null;
+  projectOutcomes: string | null;
+  vibeCode: string | null;
+  noCode: string | null;
+  type: string | null;
+  casestudyLink: string | null;
   linkToCaseStudy: string | null;
   edition: number;
   categories?: Category[];
