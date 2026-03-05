@@ -19,11 +19,15 @@
 ALTER TABLE "project" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "category" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "project_categories_category" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE "vote" ENABLE ROW LEVEL SECURITY;
 
 -- 2) Drop existing anon policies if you re-run this (optional)
--- DROP POLICY IF EXISTS "anon_select_visible_projects" ON "project";
--- DROP POLICY IF EXISTS "anon_select_categories" ON "category";
--- DROP POLICY IF EXISTS "anon_select_visible_links" ON "project_categories_category";
+DROP POLICY IF EXISTS "anon_select_visible_projects" ON "project";
+DROP POLICY IF EXISTS "anon_select_all_projects" ON "project";
+DROP POLICY IF EXISTS "anon_select_categories" ON "category";
+DROP POLICY IF EXISTS "anon_select_visible_links" ON "project_categories_category";
+DROP POLICY IF EXISTS "anon_select_all_links" ON "project_categories_category";
+DROP POLICY IF EXISTS "anon_select_confirmed_votes" ON "vote";
 
 -- 3) project: anon can SELECT only visible projects (not draft, not archived)
 CREATE POLICY "anon_select_visible_projects"
@@ -49,6 +53,19 @@ CREATE POLICY "anon_select_visible_links"
   TO anon
   USING (
     "projectId" IN (
+      SELECT id FROM "project"
+      WHERE "isArchived" = false AND "isDraft" = false
+    )
+  );
+
+-- 6) vote: anon can SELECT only confirmed votes for visible projects
+CREATE POLICY "anon_select_confirmed_votes"
+  ON "vote"
+  FOR SELECT
+  TO anon
+  USING (
+    "confirmed" = true
+    AND "projectId" IN (
       SELECT id FROM "project"
       WHERE "isArchived" = false AND "isDraft" = false
     )

@@ -1,4 +1,4 @@
-import { getSupabase } from "@/lib/supabase";
+import { getSupabase, getSupabaseAdmin } from "@/lib/supabase";
 import { NextResponse } from "next/server";
 
 /**
@@ -51,6 +51,16 @@ export async function GET() {
     .select("*")
     .limit(5);
 
+  const { data: voteRows, error: voteError } = await supabase
+    .from("vote")
+    .select("*")
+    .limit(5);
+
+  const admin = getSupabaseAdmin();
+  const { data: voteRowsAdmin, error: voteErrorAdmin } = admin
+    ? await admin.from("vote").select("*").limit(5)
+    : { data: null, error: null };
+
   out.project = {
     rowCount: Array.isArray(projectRows) ? projectRows.length : 0,
     error: projectError
@@ -77,6 +87,25 @@ export async function GET() {
     rowCount: Array.isArray(linkRows) ? linkRows.length : 0,
     error: linkError
       ? { message: linkError.message, details: linkError.details }
+      : null,
+  };
+
+  out.vote = {
+    rowCount: Array.isArray(voteRows) ? voteRows.length : 0,
+    error: voteError
+      ? { message: voteError.message, details: voteError.details }
+      : null,
+    sampleKeys:
+      Array.isArray(voteRows) && voteRows[0]
+        ? Object.keys(voteRows[0] as object)
+        : [],
+  };
+
+  out.voteAdmin = {
+    configured: Boolean(admin),
+    rowCount: Array.isArray(voteRowsAdmin) ? voteRowsAdmin.length : 0,
+    error: voteErrorAdmin
+      ? { message: voteErrorAdmin.message, details: voteErrorAdmin.details }
       : null,
   };
 

@@ -1,4 +1,4 @@
-import { getSupabase } from "./supabase";
+import { getSupabase, getSupabaseAdmin } from "./supabase";
 import type { ApiProject, ApiCategory } from "./api";
 import { stripWrappingQuotes } from "@waysconf/shared";
 
@@ -32,6 +32,76 @@ function isProjectVisible(r: Record<string, unknown>): boolean {
   if (archived === true) return false;
   if (draft === true) return false;
   return true;
+}
+
+function toNumericVotes(value: unknown): number | null {
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (typeof value === "string") {
+    const parsed = parseInt(value, 10);
+    if (!Number.isNaN(parsed)) return parsed;
+  }
+  return null;
+}
+
+async function getConfirmedVoteCountByProjectId(
+  supabase: ReturnType<typeof getSupabase>,
+  projectIds: string[]
+): Promise<Map<string, number>> {
+  const counts = new Map<string, number>();
+  if (!supabase || projectIds.length === 0) return counts;
+  const voteClient = getSupabaseAdmin() ?? supabase;
+
+  const ids = [...new Set(projectIds)];
+  const projectIdSet = new Set(ids);
+
+  let voteRows: Record<string, unknown>[] | null = null;
+
+  const byCamel = await voteClient
+    .from("vote")
+    .select("*")
+    .eq("confirmed", true)
+    .in("projectId", ids);
+
+  if (!byCamel.error) {
+    voteRows = (byCamel.data ?? []) as Record<string, unknown>[];
+  } else {
+    const bySnake = await voteClient
+      .from("vote")
+      .select("*")
+      .eq("confirmed", true)
+      .in("project_id", ids);
+
+    if (!bySnake.error) {
+      voteRows = (bySnake.data ?? []) as Record<string, unknown>[];
+    } else {
+      const fallback = await voteClient
+        .from("vote")
+        .select("*")
+        .eq("confirmed", true);
+
+      if (fallback.error) {
+        if (process.env.NODE_ENV === "development") {
+          console.warn(
+            "[Supabase] votes unavailable:",
+            fallback.error.message
+          );
+        }
+        return counts;
+      }
+      voteRows = (fallback.data ?? []) as Record<string, unknown>[];
+    }
+  }
+
+  for (const v of voteRows) {
+    const normalized = row(v);
+    const pidRaw = normalized.projectId ?? (v as { project_id?: unknown }).project_id;
+    if (pidRaw == null) continue;
+    const pid = String(pidRaw);
+    if (!projectIdSet.has(pid)) continue;
+    counts.set(pid, (counts.get(pid) ?? 0) + 1);
+  }
+
+  return counts;
 }
 
 export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
@@ -76,6 +146,11 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
   }
   if (!projects.length) return [];
 
+  const voteCountMap = await getConfirmedVoteCountByProjectId(
+    supabase,
+    projects.map((p) => String((p as Record<string, unknown>).id))
+  );
+
   const projectIds = projects.map((p) => String(p.id));
   const { data: links } = await supabase
     .from("project_categories_category")
@@ -119,6 +194,7 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
 
   return projects.map((p) => {
     const r = p as Record<string, unknown>;
+    const projectId = String(r.id);
     const catIds = linkMap.get(String(r.id)) ?? [];
     const categoriesList = catIds
       .map((id) => categoryMap.get(id))
@@ -168,6 +244,7 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
       type: r.type != null ? String(r.type) : null,
       casestudyLink:
         caseStudyLink != null ? String(caseStudyLink) : null,
+      votes: voteCountMap.get(projectId) ?? toNumericVotes(r.votes) ?? 0,
       categories: categoriesList,
     } as ApiProject;
   });
@@ -245,6 +322,7 @@ export async function getProjectBySlugFromSupabase(
   if (getEditionFromRow(p) !== EDITION || !isProjectVisible(p)) return null;
 
   const projectId = String(p.id);
+  const voteCountMap = await getConfirmedVoteCountByProjectId(supabase, [projectId]);
   const { data: allLinks } = await supabase
     .from("project_categories_category")
     .select("*");
@@ -314,6 +392,7 @@ export async function getProjectBySlugFromSupabase(
     type: r.type != null ? String(r.type) : null,
     casestudyLink:
       caseStudyLink != null ? String(caseStudyLink) : null,
+    votes: voteCountMap.get(projectId) ?? toNumericVotes(r.votes) ?? 0,
     categories: categoriesList,
   } as ApiProject;
 }

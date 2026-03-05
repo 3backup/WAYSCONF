@@ -7,10 +7,12 @@
 ALTER TABLE "project" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "category" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "project_categories_category" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE "vote" ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS "anon_select_visible_projects" ON "project";
 DROP POLICY IF EXISTS "anon_select_categories" ON "category";
 DROP POLICY IF EXISTS "anon_select_visible_links" ON "project_categories_category";
+DROP POLICY IF EXISTS "anon_select_confirmed_votes" ON "vote";
 
 CREATE POLICY "anon_select_visible_projects"
   ON "project"
@@ -33,6 +35,18 @@ CREATE POLICY "anon_select_visible_links"
   TO anon
   USING (
     project_id IN (
+      SELECT id FROM "project"
+      WHERE is_archived = false AND is_draft = false
+    )
+  );
+
+CREATE POLICY "anon_select_confirmed_votes"
+  ON "vote"
+  FOR SELECT
+  TO anon
+  USING (
+    confirmed = true
+    AND project_id IN (
       SELECT id FROM "project"
       WHERE is_archived = false AND is_draft = false
     )

@@ -242,11 +242,6 @@
   .navbar1_component.is-open .navbar1_menu { display: flex; }
 }
 
-/* Jury placeholder */
-.awards-jury-placeholder {
-  margin-top: 2rem;
-  text-align: center;
-}
 
 .jury-member-card {
   position: relative;
@@ -2346,9 +2341,14 @@
 }
 
 .awards-jury-link {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  .awards-jury-link { position: relative; width: 100%; }
 }
 
 .speaker-hero-grid_image-wrapper {
@@ -8739,7 +8739,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  padding: 1.25rem 2rem;
+  padding: 0.85rem 2rem;
   align-items: center;
 
   border-bottom: 0px solid transparent;
@@ -8753,24 +8753,16 @@
   color: var(--accessible-components-white-smoke);
 }
 
-.navbar1_component.scrolled {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
 @media screen and (max-width: 991px) {
   .navbar1_component {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .navbar1_component {
     height: auto;
-    min-height: 4rem;
+    min-height: 3.5rem;
   }
 }
 
@@ -10939,61 +10931,8 @@
   pointer-events: none;
 }
 
-/* Jury cards: normalize card height and keep role text readable on blue cards */
+/* Jury cards: normalize card height */
 .section-hero-wrapper.awards-jury .speakers-collection-list-s {
   align-items: stretch;
   grid-auto-rows: 1fr;
-}
-
-.awards-jury-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.awards-jury-card__content {
-  height: 10.5rem;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.awards-jury-card__name {
-  margin: 0;
-  color: #fff;
-  display: -webkit-box;
-  min-height: 2.5em;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.awards-jury-card__role {
-  margin: 0;
-  min-height: 2.8em;
-  color: #fff !important;
-  opacity: 1;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.awards-jury-card__role a {
-  color: #fff !important;
-}
-
-.awards-jury-more {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .awards-jury-card__content {
-    height: 9.5rem;
-  }
-
-  .awards-jury-more {
-    margin-top: 1.5rem;
-  }
 }

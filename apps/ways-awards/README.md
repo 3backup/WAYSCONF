@@ -8,6 +8,8 @@ WaysAwards voting app (successor to dwa-voting-2026). Next.js 15, uses `@wayscon
    - In `apps/ways-awards/.env` set:
      - `NEXT_PUBLIC_SUPABASE_URL` = your Supabase project URL (e.g. `https://xxx.supabase.co`)
      - `NEXT_PUBLIC_SUPABASE_ANON_KEY` = anon/public key from Project Settings → API
+     - Optional (server-side vote counters): `SUPABASE_SERVICE_ROLE_KEY` = service role key
+       (used only on server to read `vote` when anon RLS doesn't expose it)
    - Your Supabase DB must have the same schema as the API (project, category, project_categories_category). Run migrations from `apps/api` against the Supabase DB if needed, then import data via `import:json`.
 
 2. **Frontend**:
