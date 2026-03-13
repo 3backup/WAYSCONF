@@ -6,6 +6,7 @@ type JuryMember = {
   role?: string;
   company?: string;
   bio?: string;
+  year?: string;
   image?: string;
   profileUrl?: string;
 };
@@ -20,6 +21,7 @@ export type AwardsJuryProps = {
   showMoreHref?: string;
   showMoreLabel?: string;
   year?: string;
+  showYearFilters?: boolean;
 };
 
 function normalizeYear(value: string | undefined | null): string | null {
@@ -46,6 +48,10 @@ function roleLine(member: JuryMember) {
   }
 
   return member.role || member.company || "";
+}
+
+function yearOfMember(member: JuryMember): string | null {
+  return normalizeYear(member.year ?? null);
 }
 
 function JuryItem({ member }: { member: JuryMember }) {
@@ -124,20 +130,99 @@ export function AwardsJury({
   showMoreHref,
   showMoreLabel = "Pokaż więcej",
   year = DEFAULT_JURY_YEAR,
+  showYearFilters = false,
 }: AwardsJuryProps) {
   const [members, setMembers] = React.useState<JuryMember[]>([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [error, setError] = React.useState<string>("");
   const requestedYear = React.useMemo(() => normalizeYear(year), [year]);
-  const visibleMembers = React.useMemo(() => {
-    if (typeof limit !== "number" || limit <= 0) {
+  const [selectedYear, setSelectedYear] = React.useState<string | null>(
+    requestedYear
+  );
+  const availableYears = React.useMemo(() => {
+    const years = Array.from(
+      new Set(
+        members
+          .map((member) => yearOfMember(member))
+          .filter((value): value is string => Boolean(value) && value !== "all")
+      )
+    );
+
+    return years.sort((left, right) => right.localeCompare(left));
+  }, [members]);
+  const activeYear = showYearFilters ? selectedYear : requestedYear;
+  const filteredMembers = React.useMemo(() => {
+    if (!showYearFilters || !activeYear || activeYear === "all") {
       return members;
     }
 
-    return members.slice(0, limit);
-  }, [members, limit]);
+    return members.filter((member) => yearOfMember(member) === activeYear);
+  }, [activeYear, members, showYearFilters]);
+  const visibleMembers = React.useMemo(() => {
+    if (typeof limit !== "number" || limit <= 0) {
+      return filteredMembers;
+    }
+
+    return filteredMembers.slice(0, limit);
+  }, [filteredMembers, limit]);
   const shouldShowMoreButton =
-    Boolean(showMoreHref) && members.length > visibleMembers.length;
+    !showYearFilters &&
+    Boolean(showMoreHref) &&
+    filteredMembers.length > visibleMembers.length;
+
+  React.useEffect(() => {
+    if (!showYearFilters || typeof window === "undefined") {
+      return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const urlYear = normalizeYear(params.get("year"));
+    if (urlYear) {
+      setSelectedYear(urlYear);
+    }
+  }, [showYearFilters]);
+
+  React.useEffect(() => {
+    if (!showYearFilters) {
+      setSelectedYear(requestedYear);
+      return;
+    }
+
+    if (selectedYear === "all") {
+      return;
+    }
+
+    if (selectedYear && availableYears.includes(selectedYear)) {
+      return;
+    }
+
+    if (requestedYear && availableYears.includes(requestedYear)) {
+      setSelectedYear(requestedYear);
+      return;
+    }
+
+    if (availableYears.length > 0) {
+      setSelectedYear(availableYears[0]);
+      return;
+    }
+
+    setSelectedYear(requestedYear ?? "all");
+  }, [availableYears, requestedYear, selectedYear, showYearFilters]);
+
+  React.useEffect(() => {
+    if (!showYearFilters || typeof window === "undefined" || !selectedYear) {
+      return;
+    }
+
+    const url = new URL(window.location.href);
+    if (selectedYear === requestedYear) {
+      url.searchParams.delete("year");
+    } else {
+      url.searchParams.set("year", selectedYear);
+    }
+
+    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [requestedYear, selectedYear, showYearFilters]);
 
   React.useEffect(() => {
     let isCancelled = false;
@@ -147,12 +232,14 @@ export function AwardsJury({
 
       try {
         const params = new URLSearchParams();
-        if (requestedYear && requestedYear !== "all") {
+        if (showYearFilters) {
+          params.set("year", "all");
+        } else if (requestedYear && requestedYear !== "all") {
           params.set("year", requestedYear);
         }
 
         const query = params.toString();
-        const endpoint = query ? `/api/webflow/jury?${query}` : "/api/webflow/jury";
+        const endpoint = query ? `/api/jury?${query}` : "/api/jury";
         const response = await fetch(endpoint, {
           headers: {
             Accept: "application/json",
@@ -190,12 +277,40 @@ export function AwardsJury({
     return () => {
       isCancelled = true;
     };
-  }, [requestedYear]);
+  }, [requestedYear, showYearFilters]);
 
   return (
-    <div className="section-hero-wrapper awards-jury">
+    <div className="section-hero-wrapper awards-jury" style={{ paddingTop: "6rem" }}>
       <div className="home-speakers-content">
         <h2 className="ways25-heading2 text-align-center">Meet our esteemed experts</h2>
+        {showYearFilters && (availableYears.length > 0 || !isLoading) ? (
+          <div
+            className="filters-row category-filters"
+            style={{
+              justifyContent: "center",
+              marginTop: "1.75rem",
+              marginBottom: "2rem",
+            }}
+          >
+            <button
+              type="button"
+              className={`category-filter-btn${activeYear === "all" ? " active" : ""}`}
+              onClick={() => setSelectedYear("all")}
+            >
+              All years
+            </button>
+            {availableYears.map((tabYear) => (
+              <button
+                key={tabYear}
+                type="button"
+                className={`category-filter-btn${activeYear === tabYear ? " active" : ""}`}
+                onClick={() => setSelectedYear(tabYear)}
+              >
+                {tabYear}
+              </button>
+            ))}
+          </div>
+        ) : null}
         {isLoading ? (
           <p className="is--paragraph is--text-color-silver" style={{ marginTop: "2rem", textAlign: "center" }}>
             Loading jury members...

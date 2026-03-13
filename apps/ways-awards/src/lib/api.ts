@@ -7,6 +7,7 @@ import {
 import { isSupabaseConfigured } from "./supabase";
 import {
   getProjectsFromSupabase,
+  getProjectsFromSupabaseByEdition,
   getCategoriesFromSupabase,
   getProjectBySlugFromSupabase,
 } from "./supabase-data";
@@ -103,18 +104,30 @@ function sanitizeProject(p: ApiProject): ApiProject {
 }
 
 export async function getProjects(): Promise<ApiProject[]> {
+  return getProjectsByEdition(EDITION);
+}
+
+export async function getProjectsByEdition(edition: number): Promise<ApiProject[]> {
   const useSupabase = isSupabaseConfigured();
   if (process.env.NODE_ENV === "development") {
-    console.log("[WaysAwards] getProjects: Supabase configured?", useSupabase, "EDITION:", EDITION);
+    console.log(
+      "[WaysAwards] getProjects: Supabase configured?",
+      useSupabase,
+      "EDITION:",
+      edition
+    );
   }
   if (useSupabase) {
-    const data = await getProjectsFromSupabase();
+    const data =
+      edition === EDITION
+        ? await getProjectsFromSupabase()
+        : await getProjectsFromSupabaseByEdition(edition);
     const list = (data ?? []).map(sanitizeProject);
     if (process.env.NODE_ENV === "development") {
       console.log("[WaysAwards] getProjects: using Supabase, count:", list.length);
     }
     if (list.length === 0 && process.env.NEXT_PUBLIC_API_URL) {
-      const fallback = await fetchProjectsFromApi();
+      const fallback = await fetchProjectsFromApi(edition);
       if (process.env.NODE_ENV === "development" && fallback.length > 0) {
         console.log("[WaysAwards] getProjects: fallback to API, count:", fallback.length);
       }
@@ -122,12 +135,12 @@ export async function getProjects(): Promise<ApiProject[]> {
     }
     return list;
   }
-  return fetchProjectsFromApi();
+  return fetchProjectsFromApi(edition);
 }
 
-async function fetchProjectsFromApi(): Promise<ApiProject[]> {
+async function fetchProjectsFromApi(edition = EDITION): Promise<ApiProject[]> {
   const base = getBaseUrl();
-  const res = await fetch(`${base}${API_PATHS.projectByYear(EDITION)}`, {
+  const res = await fetch(`${base}${API_PATHS.projectByYear(edition)}`, {
     next: { revalidate: 60 },
   });
   if (!res.ok) return [];

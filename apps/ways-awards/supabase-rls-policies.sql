@@ -20,6 +20,8 @@ ALTER TABLE "project" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "category" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "project_categories_category" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "vote" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE "jury_person" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE "jury_person_edition" ENABLE ROW LEVEL SECURITY;
 
 -- 2) Drop existing anon policies if you re-run this (optional)
 DROP POLICY IF EXISTS "anon_select_visible_projects" ON "project";
@@ -28,6 +30,8 @@ DROP POLICY IF EXISTS "anon_select_categories" ON "category";
 DROP POLICY IF EXISTS "anon_select_visible_links" ON "project_categories_category";
 DROP POLICY IF EXISTS "anon_select_all_links" ON "project_categories_category";
 DROP POLICY IF EXISTS "anon_select_confirmed_votes" ON "vote";
+DROP POLICY IF EXISTS "anon_select_published_jury_people" ON "jury_person";
+DROP POLICY IF EXISTS "anon_select_published_jury_editions" ON "jury_person_edition";
 
 -- 3) project: anon can SELECT only visible projects (not draft, not archived)
 CREATE POLICY "anon_select_visible_projects"
@@ -68,6 +72,26 @@ CREATE POLICY "anon_select_confirmed_votes"
     AND "projectId" IN (
       SELECT id FROM "project"
       WHERE "isArchived" = false AND "isDraft" = false
+    )
+  );
+
+-- 7) jury_person: anon can read only published people
+CREATE POLICY "anon_select_published_jury_people"
+  ON "jury_person"
+  FOR SELECT
+  TO anon
+  USING ("is_published" = true);
+
+-- 8) jury_person_edition: anon can read only published assignments for published people
+CREATE POLICY "anon_select_published_jury_editions"
+  ON "jury_person_edition"
+  FOR SELECT
+  TO anon
+  USING (
+    "is_published" = true
+    AND "jury_person_id" IN (
+      SELECT id FROM "jury_person"
+      WHERE "is_published" = true
     )
   );
 

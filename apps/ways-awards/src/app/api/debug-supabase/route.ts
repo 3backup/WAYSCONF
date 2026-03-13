@@ -56,6 +56,19 @@ export async function GET() {
     .select("*")
     .limit(5);
 
+  const { data: juryPersonRows, error: juryPersonError } = await supabase
+    .from("jury_person")
+    .select("*")
+    .limit(5);
+
+  const {
+    data: juryPersonEditionRows,
+    error: juryPersonEditionError,
+  } = await supabase
+    .from("jury_person_edition")
+    .select("*")
+    .limit(5);
+
   const admin = getSupabaseAdmin();
   const { data: voteRowsAdmin, error: voteErrorAdmin } = admin
     ? await admin.from("vote").select("*").limit(5)
@@ -107,6 +120,33 @@ export async function GET() {
     error: voteErrorAdmin
       ? { message: voteErrorAdmin.message, details: voteErrorAdmin.details }
       : null,
+  };
+
+  out.juryPerson = {
+    rowCount: Array.isArray(juryPersonRows) ? juryPersonRows.length : 0,
+    error: juryPersonError
+      ? { message: juryPersonError.message, details: juryPersonError.details }
+      : null,
+    sampleKeys:
+      Array.isArray(juryPersonRows) && juryPersonRows[0]
+        ? Object.keys(juryPersonRows[0] as object)
+        : [],
+  };
+
+  out.juryPersonEdition = {
+    rowCount: Array.isArray(juryPersonEditionRows)
+      ? juryPersonEditionRows.length
+      : 0,
+    error: juryPersonEditionError
+      ? {
+          message: juryPersonEditionError.message,
+          details: juryPersonEditionError.details,
+        }
+      : null,
+    sampleKeys:
+      Array.isArray(juryPersonEditionRows) && juryPersonEditionRows[0]
+        ? Object.keys(juryPersonEditionRows[0] as object)
+        : [],
   };
 
   return NextResponse.json(out);

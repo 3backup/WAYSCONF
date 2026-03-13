@@ -9,6 +9,8 @@ ALTER TABLE "project" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "category" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "project_categories_category" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE "vote" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE "jury_person" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE "jury_person_edition" ENABLE ROW LEVEL SECURITY;
 
 -- Usuń stare polityki anon, jeśli były (żeby nie duplikować)
 DROP POLICY IF EXISTS "anon_select_visible_projects" ON "project";
@@ -17,6 +19,8 @@ DROP POLICY IF EXISTS "anon_select_categories" ON "category";
 DROP POLICY IF EXISTS "anon_select_visible_links" ON "project_categories_category";
 DROP POLICY IF EXISTS "anon_select_all_links" ON "project_categories_category";
 DROP POLICY IF EXISTS "anon_select_confirmed_votes" ON "vote";
+DROP POLICY IF EXISTS "anon_select_published_jury_people" ON "jury_person";
+DROP POLICY IF EXISTS "anon_select_published_jury_editions" ON "jury_person_edition";
 
 -- Zezwól anon na SELECT (odczyt) – bez filtra, żeby działało od razu
 CREATE POLICY "anon_select_all_projects"
@@ -42,3 +46,21 @@ CREATE POLICY "anon_select_confirmed_votes"
   FOR SELECT
   TO anon
   USING ("confirmed" = true);
+
+CREATE POLICY "anon_select_published_jury_people"
+  ON "jury_person"
+  FOR SELECT
+  TO anon
+  USING ("is_published" = true);
+
+CREATE POLICY "anon_select_published_jury_editions"
+  ON "jury_person_edition"
+  FOR SELECT
+  TO anon
+  USING (
+    "is_published" = true
+    AND "jury_person_id" IN (
+      SELECT id FROM "jury_person"
+      WHERE "is_published" = true
+    )
+  );

@@ -8,7 +8,7 @@ export function AwardsJuryPage() {
     <>
       <AwardsNavbar />
       <div className="page-wrapper-home awards-home-scope">
-        <AwardsJury />
+        <AwardsJury showYearFilters />
         <AwardsFooter />
       </div>
     </>

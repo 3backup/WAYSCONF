@@ -105,6 +105,12 @@ async function getConfirmedVoteCountByProjectId(
 }
 
 export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
+  return getProjectsFromSupabaseByEdition(EDITION);
+}
+
+export async function getProjectsFromSupabaseByEdition(
+  edition: number
+): Promise<ApiProject[]> {
   const supabase = getSupabase();
   if (!supabase) return [];
 
@@ -126,7 +132,7 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
     .map((p) => row(p))
     .filter(
       (r) =>
-        getEditionFromRow(r) === EDITION && isProjectVisible(r)
+        getEditionFromRow(r) === edition && isProjectVisible(r)
     )
     .sort((a, b) =>
       String(a.name ?? "").localeCompare(String(b.name ?? ""))
@@ -135,7 +141,7 @@ export async function getProjectsFromSupabase(): Promise<ApiProject[]> {
     const sample = row(allRows[0] as Record<string, unknown>);
     console.warn(
       "[Supabase] 0 projects after filter. EDITION=",
-      EDITION,
+      edition,
       "Sample row edition/year:",
       sample.edition ?? sample.year,
       "isArchived:",
